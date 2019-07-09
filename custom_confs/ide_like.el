@@ -35,14 +35,9 @@
 
 ;; --- Smex: buffer history
 (unless (package-installed-p 'smex)
-  (package-install 'dumb-jump))
+  (package-install 'smex))
 (smex-initialize)
 (global-set-key (kbd "M-x") 'smex)
-
-;; --- Helm Swoop: Find string occurence
-(unless (package-installed-p 'helm-swoop)
-  (package-install helm-swoop))
-(setq helm-swoop-split-direction 'split-window-horizontally)
 
 ;; --- Rainbow-delimiters
 ;; Highlights delimiters such as parentheses, brackets or braces according to their depth
