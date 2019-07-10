@@ -29,3 +29,4 @@
 (global-set-key (kbd "DEL") 'backward-delete-char)
 (setq-default c-backspace-function 'backward-delete-char)
 (setq-default c-basic-offset 4)
+(fset 'yes-or-no-p 'y-or-n-p) ; y-or-n-p makes answering questions faster
