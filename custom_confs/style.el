@@ -14,6 +14,9 @@
 '(popup-face ((t (:inherit default :background "black" :foreground "color-243"))))
 '(popup-scroll-bar-background-face ((t (:background "black"))))
 '(popup-summary-face ((t (:inherit popup-face :background "black" :foreground "dimgray"))))
+'(custom-group-tag ((t (:inherit variable-pitch :foreground "color-26" :weight bold :height 1.2))))
+'(custom-variable-tag ((t (:foreground "color-27" :weight bold))))
+'(font-lock-function-name-face ((t (:foreground "color-27"))))
 '(popup-tip-face ((t (:background "brightblack" :foreground "black")))))
 
 ;; --- Remove menu bar
@@ -34,3 +37,5 @@
 
 ;; --- add space after linum
 (setq linum-format "%d ")
+
+
