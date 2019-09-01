@@ -5,11 +5,11 @@
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
 
 
-;; --- WINDOWS ACTIONS ---                                                                                
-;; --- Delete current window                                                                              
+;; --- WINDOWS ACTIONS ---
+;; --- Delete current window
 (global-set-key (kbd "C-x w") 'delete-window)
 
-;; --- Spliter                                                                                            
+;; --- Spliter
 (defun empty-current-window ()
   (interactive)
   (let (($buf (generate-new-buffer "untitled")))
@@ -35,4 +35,4 @@
 
 (global-set-key (kbd "C-M-@") 'split-vertically)
 (global-set-key (kbd "M-SPC") 'split-horizontally)
-(windmove-default-keybindings)  ; Uses [Shift + arrows]
+;(windmove-default-keybindings)  ; Uses [Shift + arrows]
