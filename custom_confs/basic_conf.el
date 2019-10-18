@@ -17,9 +17,9 @@
   (package-initialize))
 
 ;; --- Auto Update Package
-(unless (package-installed-p 'auto-package-update)
-  (package-install 'auto-package-update))
-(auto-package-update-at-time "16:20")
+;(unless (package-installed-p 'auto-package-update)
+;  (package-install 'auto-package-update))
+;(auto-package-update-at-time "16:20")
 
 ;; === BASICS === ;;
 (set-language-environment "UTF-8")

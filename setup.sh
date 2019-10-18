@@ -1,4 +1,10 @@
-sudo apt install -yy emacs
+#!/bin/bash
+
+if [ "$(uname)" == "Darwin" ]; then
+	bew install emacs
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+	sudo apt install emacs
+fi
 
 rm -Rf ${HOME}/.emacs ${HOME}/.emacs.d/custom_confs ${HOME}/.myemacs
 
