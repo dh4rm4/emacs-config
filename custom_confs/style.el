@@ -9,15 +9,21 @@
 (custom-set-faces
  '(font-lock-function-name-face ((t (:foreground "color-136"))))
  '(font-lock-keyword-face ((t (:foreground "color-241"))))
+ '(lazy-highlight ((t (:background "color-52"))))
+ '(magit-diff-context-highlight ((t (:background "brightblack" :foreground "white"))))
+ '(magit-diff-hunk-heading-highlight ((t (:background "color-19" :foreground "grey30"))))
+ '(whitespace-space ((t (:background "color-237" :foreground "lightgray"))))
+ '(font-lock-function-name-face ((t (:foreground "color-136"))))
+ '(font-lock-keyword-face ((t (:foreground "color-241"))))
+ '(custom-group-tag ((t (:inherit variable-pitch :foreground "color-26" :weight bold :height 1.2))))
+ '(custom-variable-tag ((t (:foreground "color-27" :weight bold))))
 
  ;; --- auto-complete popup style
-'(popup-face ((t (:inherit default :background "black" :foreground "color-243"))))
-'(popup-scroll-bar-background-face ((t (:background "black"))))
-'(popup-summary-face ((t (:inherit popup-face :background "black" :foreground "dimgray"))))
-'(custom-group-tag ((t (:inherit variable-pitch :foreground "color-26" :weight bold :height 1.2))))
-'(custom-variable-tag ((t (:foreground "color-27" :weight bold))))
-'(font-lock-function-name-face ((t (:foreground "color-27"))))
-'(popup-tip-face ((t (:background "brightblack" :foreground "black")))))
+ '(popup-face ((t (:inherit default :background "black" :foreground "color-243"))))
+ '(popup-scroll-bar-background-face ((t (:background "black"))))
+ '(popup-summary-face ((t (:inherit popup-face :background "black" :foreground "dimgray"))))
+ '(popup-tip-face ((t (:background "brightblack" :foreground "black"))))
+ )
 
 ;; --- Remove menu bar
 (menu-bar-mode -1)
@@ -37,5 +43,3 @@
 
 ;; --- add space after linum
 (setq linum-format "%d ")
-
-
